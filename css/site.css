@@ -1,0 +1,395 @@
+* {    
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+/* common */
+html {
+    line-height: 1.6;
+}
+
+:root {
+    --container-full-width: 100%;
+    --container-normal-width: 1140px;
+    --bg-primary-color:#011C38;
+}
+
+.col {
+    margin-left: 360px;
+    margin-right: 300px;
+    width: var(--container-normal-width);
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.33333%;
+}
+
+.sub-header::after {
+    content: "";
+    display: block;
+    width: 30px;
+    border-bottom: 3px solid #c5c5c5;
+    margin-bottom: 24px;
+}
+/*main*/
+#header {
+    background: url(../images/background.png);
+    height: 140px;
+    color: #fff;
+    width: var(--container-full-width);
+    position: relative;
+}
+
+#header ul {
+    list-style: none;
+}
+
+#header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .header-1{
+    height: 40px;
+    line-height: 40px;
+}
+
+#header .header-1::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+    border-bottom: 0.2px solid #1e3e5d;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+#header .header-1 .contact,
+#header .header-1 .nav-page,
+#header .header-2 h3,
+#header .header-2 .nav {
+    display: inline-block;
+}
+
+#header .header-1 .contact{
+    float: left;
+}
+
+#header .header-1 .nav-page {
+    float: right;
+}
+
+#header .nav-page li {
+    display: inline-block;
+    padding-left: 24px;
+}
+
+#header .header-2 {
+    height: 100px;
+    line-height: 100px;
+}
+
+#header .header-2 h3 {
+    text-transform: uppercase;
+    float: left;
+}
+
+#header .header-2 .nav {
+    float: right;
+}
+
+#header .header-2::after {
+    content : "";
+    display: block;
+    clear: both;
+}
+
+#header .nav li {
+    display: inline-block;
+    padding-left: 32px;
+}
+
+#banners {
+    background-color: var(--bg-primary-color);
+}
+
+#banners .col{
+    position: relative;
+    min-height: 320px;
+}
+
+#banners .col img {
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+#banners .send {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 48px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+#banners .send-input {
+    margin-top: 26px;
+    position: relative;
+}
+
+#banners .send-input .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#banners .send-input .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: -16px;
+}
+
+#banners .send-input input {
+    width: 260px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #1b334c;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#banners .send .send-btn {
+    position: absolute;
+    top: 230px;
+    right: 0;
+    width: 140px;
+    height: 40px;
+    color: #ea6645;
+    font-size: 16px;
+    font-weight: 600;
+    border: 3px solid #ea6645;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+#content {
+    margin-top: 64px;
+    color: #bbb;
+}
+
+#content .update .sub-header {
+    color: #000;
+}
+
+#content .col {
+    overflow: auto;
+}
+
+#content .update ul {
+    list-style: none;
+}
+
+#content .col-3 {
+    float: left;
+}
+
+#content .col-3 .date-news {
+    padding-left: 24px;
+    color: #011C38;
+}
+
+.news-content p {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.news-content li {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.event-content .date-1 {
+    background-color: #c5c5c5;
+    display: inline-block;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-content li {
+    display: block;
+    min-height: 120px;
+}
+
+.event-content .date-2 {
+    background-color: #ea6645;
+    display: inline-block;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-content .date-3 {
+    background-color: #012951;
+    display: inline-block;
+    color: #fff;
+    min-width: 70px;
+    min-height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-content .month {
+    font-size: 20px;
+    text-align: center;
+}
+
+.event-content .day {
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    bottom: -30px;
+}
+
+.event-content .sub-content {
+    display: inline-block;
+    width: 300px;
+    padding-top: 20px;
+}
+
+.event-content .sub-content p {
+    color: #011C38;
+}
+
+.training {
+    color: #fff;
+    background-color:#012951;
+    padding: 55px 45px;
+}
+
+.training ul {
+    padding-left: 20px;
+}
+
+.training a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.student {
+    padding-top: 66px;
+}
+
+.student .student-face {
+    width: 360px;
+    height: 230px;
+    display: inline-block;
+}
+
+.student .sub-header {
+    color: #252525;
+    font-size: 30px;
+}
+
+.student .student-face .name {
+    color: #012951;
+    font-size: 40px;
+}
+
+.student .student-face .name::after {
+    content: "";
+    display: block;
+    width: 30px;
+    border-bottom: 2px solid #c5c5c5;
+}
+
+.student .student-face .student-1,
+.student .student-face .student-2{
+    width: 360px;
+    height: 100px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.student .student-face .student-1 div,
+.student .student-face .student-2 div {
+    float: left;
+    padding-left: 10px;
+}
+
+.student .student-face img {
+    width: 80px;
+    float: left;
+}
+
+.student .student-face .name {
+    font-size: 16px;
+}
+
+.student .student-face .majors {
+    margin-top: 5px;
+}
+
+.student .student-face .achievement {
+    color: #000;
+}
+
+.student .student-img {
+    width: 760px;
+    float: right;
+    padding-left:  20px;
+}
+
+.student .student-img img {
+    height: 100px;
+    width: 100px;
+}
+
+#footer {
+    background: url(../images/background.png);
+    color: #fff;
+    min-height: 380px;
+    overflow: auto;
+}
+
+#footer .col .col-3 {
+    float: left;
+}
+
+#footer .col {
+    overflow: auto;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .info {
+    margin-top: 20px;
+}
+
+#footer .info a {
+    text-decoration: underline dotted;
+}
+
+#footer .copyright {
+    height: 50px;
+    background-color: #012447;
+    line-height: 50px;
+    padding-left: 360px;
+}
